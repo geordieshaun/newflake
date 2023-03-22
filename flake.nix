@@ -48,7 +48,7 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.shaun = {
-                imports = [ ./laptop/home.nix ];
+                imports = [ ./home.nix ./laptop/home.nix ];
               };
             }
           ];
