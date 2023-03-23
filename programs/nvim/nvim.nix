@@ -21,7 +21,7 @@
       nvim-compe
 
       # Eye Candy
-      nvim-treesitter
+      nvim-treesitter.withAllGrammars
     ];
   };
 }
