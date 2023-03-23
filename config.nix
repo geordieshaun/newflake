@@ -20,6 +20,20 @@
     useXkbConfig = true;
   };
 
+  fonts.fonts = with pkgs; [
+    carlito
+    vegur
+    source-code-pro
+    jetbrains-mono
+    font-awesome
+    corefonts
+    (nerdfonts.override {
+      fonts = [
+        "FiraCode"
+      ];
+    })
+  ];
+
   # User account I use on all hosts
   users.users.shaun= {
     home = "/home/shaun";
