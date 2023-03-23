@@ -47,3 +47,10 @@ opt.autoread = true
 opt.incsearch = true
 opt.hidden = true
 opt.shortmess = "atI"
+
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = { "all" },
+    highlight = {
+        enable = true,
+    },
+}
