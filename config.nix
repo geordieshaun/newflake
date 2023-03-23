@@ -42,6 +42,18 @@
     initialPassword = "password";
   };
 
+
+  services = {
+    sshd.enable = true;
+    flatpak.enable = true;      # download flatpak file from website - sudo flatpak install <path> - reboot if not showing up
+                                # sudo flatpak uninstall --delete-data <app-id> (> flatpak list --app) - flatpak uninstall --unused
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+
   security.sudo.wheelNeedsPassword = false;
 
   environment.systemPackages = with pkgs; [
