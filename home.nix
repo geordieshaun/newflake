@@ -7,7 +7,7 @@
     stateVersion = "22.11";
   };
 
-  imports = [ ./programs/nvim.nix ];
+  imports = [ ./programs/nvim/nvim.nix ];
   home.packages = with pkgs; [
     google-chrome
   ];

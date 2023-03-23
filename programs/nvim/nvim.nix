@@ -7,6 +7,7 @@
     vimAlias = true;
     extraConfig = ''
       luafile ${./init.lua}
+      luafile ${./treesitter.lua}
     '';
     plugins = with pkgs.vimPlugins; [
       nvim-web-devicons
