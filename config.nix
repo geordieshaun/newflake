@@ -6,6 +6,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
+    timeout = 1;
     kernelPackages = pkgs.linuxPackages_latest;
   };
 
@@ -34,6 +35,11 @@
   nix = {
     package = pkgs.nixFlakes;
     extraOptions = "experimental-features = nix-command flakes";
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 2d";
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
