@@ -42,6 +42,8 @@
     initialPassword = "password";
   };
 
+  security.sudo.wheelNeedsPassword = false;
+
   environment.systemPackages = with pkgs; [
     git gptfdisk inxi nano pciutils usbutils wget
   ];
