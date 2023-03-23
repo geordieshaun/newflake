@@ -55,7 +55,7 @@ vim.fn.mkdir(parser_install_dir, "p")
 vim.opt.runtimepath:append(parser_install_dir)
 
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = { "all" },
+    ensure_installed = {},
     highlight = {
         enable = true,
     },
