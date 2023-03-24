@@ -5,6 +5,6 @@
 
   };
   home.packages = with pkgs; [
-    blender google-chrome lutris wineWowPackages.staging winetricks
+    blender google-chrome krita lutris wineWowPackages.staging winetricks
   ];
 }
