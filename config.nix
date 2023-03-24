@@ -36,13 +36,14 @@
 
   # User account I use on all hosts
   users.users.shaun= {
+    shell = pkgs.zsh;
     home = "/home/shaun";
     isNormalUser = true;
     extraGroups = [ "wheel" "video" "audio" "networkmanager" "lp" "scanner" ];
     initialPassword = "password";
   };
-
-
+  environment.shells = with pkgs; [ zsh ];
+  
   services = {
     sshd.enable = true;
     flatpak.enable = true;      # download flatpak file from website - sudo flatpak install <path> - reboot if not showing up
