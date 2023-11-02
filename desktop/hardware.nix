@@ -25,7 +25,7 @@
 
   fileSystems."/Data" =
     { device = "/dev/disk/by-label/Data";
-      fsType = "ext4";
+      fsType = "btrfs";
     };
 
   swapDevices = [ ];
