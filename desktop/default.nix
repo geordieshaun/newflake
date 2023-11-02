@@ -13,8 +13,8 @@
     enable = true;
     libinput.enable = true;
     videoDrivers = [ "amdgpu" ];
-    layout = "gb";
-    xkbVariant = "mac";
+    layout = "uk";
+    # xkbVariant = "mac";
     displayManager.sddm.enable = true;
     desktopManager = {
       plasma5 = {
